@@ -1,0 +1,225 @@
+
+  body {
+    margin: 30px;
+    font-family: "Georgia", serif;
+    line-height: 1.8em;
+    color: #333;
+    background:rgba(247,247,247,.2);
+  }
+
+  /* Main content area */
+
+  #content {
+    margin: 80px 70px;
+    text-align: center;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+
+  /* Header/footer boxes */
+
+  .wideBox {
+    clear: both;
+    text-align: center;
+    margin: 70px;
+    padding: 30px;
+    float: none;
+    background: rgba(184, 184, 184, .5);
+    border: 2px solid #333;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+  }
+
+  .wideBox h1 {
+    font-weight: bold;
+    margin: 0 auto;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 2.5em;
+  }
+
+  .hidden {
+    display: none;
+  }
+  span, #score {
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  aside {
+    display: inline-block;
+    max-height: 100px;
+    width: 100%;
+  }
+
+  button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
+	background:-moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
+	background-color:#ffffff;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Georgia;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+button:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
+	background:-moz-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:-webkit-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:-o-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:-ms-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff',GradientType=0);
+	background-color:#f6f6f6;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+
+
+  #score {
+    font-size: 24px;
+    font-style: bold;
+    padding-top: 8px;
+  }
+
+  #game-time1, #game-time2{
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 5px;
+  }
+
+  #reset-game:hover {
+    background: #2c3e52;
+  }
+
+  /* Slots for final card positions */
+
+  #cardSlots {
+    margin: 50px auto 0 auto;
+    background: #ddf;
+  }
+
+  /* The initial pile of unsorted cards */
+
+  #cardPile {
+    margin: 0 auto;
+    background: rgba(107,142,35,.5);
+  }
+
+  #cardSlots{
+    background: rgba(121,121,159,.7);
+  }
+
+  #cardSlots, #cardPile {
+    width: 910px;
+    height: 120px;
+    padding: 20px;
+    border: 2px solid #333;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+    box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+  }
+
+
+  /* Individual cards and slots */
+
+  #cardSlots div, #cardPile div, img {
+    float: left;
+    width: 78px;
+    height: 118px;
+    padding-bottom: 0;
+    border: 2px solid #333;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    margin: 0 0 0 10px;
+    background: #fff;
+  }
+
+  #cardSlots img {
+    margin:0;
+    padding:0
+    width:auto;
+    height:auto;
+    border:0;
+    border-radius:1
+  }
+
+
+
+  #cardSlots div:first-child, #cardPile div:first-child {
+    margin-left: 0;
+  }
+
+  #cardSlots div.hovered {
+    background: #aaa;
+  }
+
+  #cardSlots div {
+    border-style: dashed;
+  }
+
+  #cardPile div {
+    background: #FFF;
+    color: darkolivegreen;
+    font-weight: bold;
+    font-size: 14px;
+    vertical-align: top;
+    text-align: center;
+  }
+
+  #cardPile div.ui-draggable-dragging {
+    -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+    box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  }
+
+  /* "You did it!" message */
+  /*#successMessage {
+    position: absolute;
+    left: 580px;
+    top: 250px;
+    width: 0;
+    height: 0;
+    z-index: 100;
+    background: #dfd;
+    border: 2px solid #333;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+    -webkit-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+    box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+    padding: 20px;
+  }*/
+
+  /* Individually colored cards */
+
+  #card.correct { background: white; }

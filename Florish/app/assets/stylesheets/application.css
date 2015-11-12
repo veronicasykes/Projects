@@ -1,0 +1,59 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+a#headlines{
+  color: #F8F8F8;
+  font-size: 70px !important;
+  text-shadow: 2px 2px gray;
+}
+
+a.btn.btn-link, h3.text-center{
+  color: #F8F8F8 !important;
+  font-size: 18px;
+  text-shadow: 2px 2px gray;
+}
+
+.btn-primary {
+  background-color: darkgray;
+  border-color: white;
+}
+
+.btn:hover {
+  background-color: dimgray;
+  border-color: white;
+}
+
+h3.text-center {
+  font-size: 45px !important;
+}
+
+a:hover, a:focus {
+  color: #8B341E;
+}
+
+#cartImage {
+  max-width: 200px;
+}
+
+body {
+  background: url(http://i.imgur.com/Hq3VY1n.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: gray;
+  font-family: 'Josefin Sans', sans-serif !important;
+}
